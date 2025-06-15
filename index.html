@@ -1,0 +1,82 @@
+<!-- index.html (Home Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Saad Mohammed</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <header class="bg-black text-white p-6 shadow-md">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Saad Mohammed</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="index.html" class="hover:underline font-semibold text-yellow-300">Home</a>
+        <a href="experience.html" class="hover:underline">Experience</a>
+        <a href="education.html" class="hover:underline">Education</a>
+        <a href="projects.html" class="hover:underline">Projects</a>
+        <a href="skills.html" class="hover:underline">Skills</a>
+        <a href="certifications.html" class="hover:underline">Certifications</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+        <button id="darkToggle" class="ml-4 bg-yellow-300 text-black px-2 py-1 rounded text-xs">Toggle Theme</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-6 space-y-10">
+    <section class="text-center">
+      <h2 class="text-4xl font-bold mb-2">Welcome to My Portfolio</h2>
+      <p class="text-gray-400 text-lg">I'm a Web Developer, Cybersecurity Enthusiast, and AI & ML Student.</p>
+    </section>
+
+    <section class="grid sm:grid-cols-2 gap-6">
+      <div class="bg-gray-800 p-6 rounded-md shadow-md hover:bg-gray-700 transition">
+        <h3 class="text-xl font-semibold text-yellow-300 mb-2">Who Am I?</h3>
+        <p class="text-gray-300">I'm a tech-savvy learner currently pursuing my Bachelor's in Artificial Intelligence and Machine Learning, with strong foundations in web development, cybersecurity, and software design.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-md shadow-md hover:bg-gray-700 transition">
+        <h3 class="text-xl font-semibold text-yellow-300 mb-2">My Mission</h3>
+        <p class="text-gray-300">To combine cutting-edge technology with creative problem-solving, contributing to meaningful projects that have real-world impact.</p>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="text-2xl font-semibold mb-4">Explore More</h3>
+      <ul class="list-disc pl-6 text-gray-300 space-y-1">
+        <li><a href="experience.html" class="text-blue-400 hover:underline">Work Experience</a></li>
+        <li><a href="education.html" class="text-blue-400 hover:underline">Education</a></li>
+        <li><a href="projects.html" class="text-blue-400 hover:underline">Projects</a></li>
+        <li><a href="skills.html" class="text-blue-400 hover:underline">Skills</a></li>
+        <li><a href="certifications.html" class="text-blue-400 hover:underline">Certifications</a></li>
+        <li><a href="contact.html" class="text-blue-400 hover:underline">Contact</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bg-black text-gray-400 text-center text-sm p-4 mt-10">
+    &copy; 2025 Saad Mohammed. All rights reserved.
+    <div class="mt-2">
+      <a href="SaadMohammed_InternshalaResume-3.pdf" download class="underline hover:text-white">Download Resume (PDF)</a>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('darkToggle');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('bg-white');
+      document.body.classList.toggle('text-black');
+      document.body.classList.toggle('bg-gray-900');
+      document.body.classList.toggle('text-white');
+    });
+  </script>
+
+</body>
+</html>

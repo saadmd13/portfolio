@@ -1,0 +1,75 @@
+<!-- education.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education | Saad Mohammed</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <header class="bg-black text-white p-6 shadow-md">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Saad Mohammed</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="experience.html" class="hover:underline">Experience</a>
+        <a href="education.html" class="hover:underline font-semibold text-yellow-300">Education</a>
+        <a href="projects.html" class="hover:underline">Projects</a>
+        <a href="skills.html" class="hover:underline">Skills</a>
+        <a href="certifications.html" class="hover:underline">Certifications</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+        <button id="darkToggle" class="ml-4 bg-yellow-300 text-black px-2 py-1 rounded text-xs">Toggle Theme</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-6 space-y-10">
+    <section>
+      <h2 class="text-3xl font-bold border-b border-gray-700 pb-2 mb-4">Education</h2>
+
+      <div class="bg-gray-800 p-4 rounded-md shadow-md mb-6">
+        <h3 class="text-xl font-semibold text-yellow-300">Bachelor of Engineering (AI & ML)</h3>
+        <p class="text-gray-400 text-sm">Muffakham Jah College of Engineering and Technology | 2023 - 2026</p>
+        <p class="mt-2 text-gray-300">CGPA: 7.70/10</p>
+      </div>
+
+      <div class="bg-gray-800 p-4 rounded-md shadow-md mb-6">
+        <h3 class="text-xl font-semibold text-yellow-300">Diploma in Computer Science & Engineering</h3>
+        <p class="text-gray-400 text-sm">Quli Qutub Shah Govt Polytechnic College | 2020 - 2023</p>
+        <p class="mt-2 text-gray-300">CGPA: 6.80/10</p>
+      </div>
+
+      <div class="bg-gray-800 p-4 rounded-md shadow-md">
+        <h3 class="text-xl font-semibold text-yellow-300">Secondary (Class X, CBSE)</h3>
+        <p class="text-gray-400 text-sm">Sultan Ul Uloom Public School | 2020</p>
+        <p class="mt-2 text-gray-300">CGPA: 8.50/10</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black text-gray-400 text-center text-sm p-4 mt-10">
+    &copy; 2025 Saad Mohammed. All rights reserved.
+    <div class="mt-2">
+      <a href="SaadMohammed_InternshalaResume-3.pdf" download class="underline hover:text-white">Download Resume (PDF)</a>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('darkToggle');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('bg-white');
+      document.body.classList.toggle('text-black');
+      document.body.classList.toggle('bg-gray-900');
+      document.body.classList.toggle('text-white');
+    });
+  </script>
+
+</body>
+</html>

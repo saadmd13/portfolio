@@ -1,0 +1,71 @@
+<!-- certifications.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications | Saad Mohammed</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <header class="bg-black text-white p-6 shadow-md">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Saad Mohammed</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="experience.html" class="hover:underline">Experience</a>
+        <a href="education.html" class="hover:underline">Education</a>
+        <a href="projects.html" class="hover:underline">Projects</a>
+        <a href="skills.html" class="hover:underline">Skills</a>
+        <a href="certifications.html" class="hover:underline font-semibold text-yellow-300">Certifications</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+        <button id="darkToggle" class="ml-4 bg-yellow-300 text-black px-2 py-1 rounded text-xs">Toggle Theme</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-6 space-y-10">
+    <section>
+      <h2 class="text-3xl font-bold border-b border-gray-700 pb-2 mb-4">Certifications</h2>
+
+      <div class="space-y-4 text-gray-300">
+        <div class="bg-gray-800 p-4 rounded shadow">
+          <h3 class="text-lg font-semibold text-yellow-300">Certified Ethical Hacker (CEH)</h3>
+          <p class="text-sm text-gray-400">Hacker School, Hyderabad | May 2025 - Jun 2025</p>
+          <p>Gained practical knowledge in network security, vulnerability assessment, ethical hacking techniques, and penetration testing methodologies.</p>
+        </div>
+
+        <div class="bg-gray-800 p-4 rounded shadow">
+          <h3 class="text-lg font-semibold text-yellow-300">Python Web Development</h3>
+          <p class="text-sm text-gray-400">Siasat Training Center, Hyderabad | Jul 2022 - Oct 2022</p>
+          <p>Learned full-stack development using Python for server-side scripting, integrated with frontend technologies like HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black text-gray-400 text-center text-sm p-4 mt-10">
+    &copy; 2025 Saad Mohammed. All rights reserved.
+    <div class="mt-2">
+      <a href="SaadMohammed_InternshalaResume-3.pdf" download class="underline hover:text-white">Download Resume (PDF)</a>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('darkToggle');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('bg-white');
+      document.body.classList.toggle('text-black');
+      document.body.classList.toggle('bg-gray-900');
+      document.body.classList.toggle('text-white');
+    });
+  </script>
+
+</body>
+</html>
